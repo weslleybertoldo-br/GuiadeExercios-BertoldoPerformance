@@ -1,0 +1,81 @@
+.wg-page { padding: 32px 0; }
+
+.wg-form, .wg-resultado { display: flex; flex-direction: column; gap: 28px; }
+
+.wg-form-header { border-bottom: 1px solid #222; padding-bottom: 20px; }
+.wg-title { font-family: var(--fonte-titulo); font-size: 2rem; letter-spacing: 3px; color: var(--amarelo); }
+.wg-subtitle { font-size: 0.85rem; color: var(--texto-suave); margin-top: 6px; }
+
+.wg-section { display: flex; flex-direction: column; gap: 12px; }
+.wg-label { font-size: 0.7rem; letter-spacing: 4px; text-transform: uppercase; color: var(--verde-claro); font-weight: 600; }
+
+.wg-input { background: var(--cinza-medio); border: 1px solid #333; color: var(--texto); padding: 12px 16px; border-radius: 8px; font-size: 1rem; outline: none; transition: border-color 0.2s; max-width: 400px; }
+.wg-input:focus { border-color: var(--verde-claro); }
+
+.wg-cards { display: flex; gap: 12px; flex-wrap: wrap; }
+.wg-card { background: var(--cinza-medio); border: 1px solid #333; border-radius: 10px; padding: 14px 20px; cursor: pointer; transition: all 0.2s; min-width: 160px; display: flex; flex-direction: column; gap: 4px; }
+.wg-card:hover { border-color: var(--verde-claro); }
+.wg-card.active { background: rgba(26,71,42,0.4); border-color: var(--amarelo); }
+.wg-card-title { font-weight: 600; font-size: 0.95rem; color: var(--texto); }
+.wg-card.active .wg-card-title { color: var(--amarelo); }
+.wg-card-desc { font-size: 0.75rem; color: var(--texto-suave); }
+
+.wg-pills { display: flex; gap: 10px; }
+.wg-pill { background: transparent; border: 1px solid #333; color: var(--texto-suave); padding: 8px 20px; border-radius: 20px; font-size: 0.85rem; transition: all 0.2s; cursor: pointer; }
+.wg-pill:hover { border-color: var(--verde-claro); color: var(--verde-claro); }
+.wg-pill.active { background: var(--verde-escuro); border-color: var(--amarelo); color: var(--amarelo); font-weight: 600; }
+
+.wg-focos { display: flex; flex-direction: column; gap: 8px; }
+.wg-foco { display: flex; align-items: center; gap: 14px; background: var(--cinza-medio); border: 1px solid #333; border-radius: 10px; padding: 12px 16px; cursor: pointer; transition: all 0.2s; }
+.wg-foco:hover { border-color: var(--verde-claro); }
+.wg-foco.active { background: rgba(26,71,42,0.4); border-color: var(--amarelo); }
+.wg-foco-emoji { font-size: 1.6rem; }
+.wg-foco-label { font-weight: 600; font-size: 0.9rem; color: var(--texto); }
+.wg-foco.active .wg-foco-label { color: var(--amarelo); }
+.wg-foco-desc { font-size: 0.75rem; color: var(--texto-suave); margin-top: 2px; }
+
+.wg-btn-gerar { background: var(--amarelo); border: none; color: #000; padding: 16px 32px; border-radius: 10px; font-size: 1rem; font-weight: 700; letter-spacing: 2px; font-family: var(--fonte-titulo); transition: all 0.2s; align-self: flex-start; cursor: pointer; }
+.wg-btn-gerar:hover { background: #fbbf24; transform: translateY(-1px); }
+
+/* Resultado */
+.wg-resultado-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid #222; padding-bottom: 20px; }
+.wg-resultado-actions { display: flex; gap: 10px; flex-shrink: 0; }
+.wg-btn-pdf { background: var(--verde-escuro); border: 1px solid var(--verde-claro); color: var(--texto); padding: 10px 20px; border-radius: 8px; font-size: 0.85rem; cursor: pointer; transition: all 0.2s; }
+.wg-btn-pdf:hover { background: var(--verde-medio); }
+.wg-btn-novo { background: transparent; border: 1px solid #444; color: var(--texto-suave); padding: 10px 20px; border-radius: 8px; font-size: 0.85rem; cursor: pointer; transition: all 0.2s; }
+.wg-btn-novo:hover { border-color: var(--amarelo); color: var(--amarelo); }
+
+.wg-ciencia { display: flex; gap: 14px; background: rgba(26,71,42,0.2); border: 1px solid rgba(82,183,136,0.3); border-radius: 10px; padding: 16px; }
+.wg-ciencia-icon { font-size: 1.5rem; flex-shrink: 0; }
+.wg-ciencia-titulo { font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; color: var(--verde-claro); margin-bottom: 6px; }
+.wg-ciencia-texto { font-size: 0.85rem; color: var(--texto-suave); line-height: 1.6; }
+
+.wg-dia { background: var(--cinza-escuro); border: 1px solid #222; border-radius: 12px; overflow: hidden; }
+.wg-dia-header { display: flex; align-items: center; gap: 16px; padding: 14px 20px; background: rgba(26,71,42,0.3); border-bottom: 1px solid #1a1a1a; flex-wrap: wrap; }
+.wg-dia-numero { font-family: var(--fonte-titulo); font-size: 1.2rem; color: var(--amarelo); letter-spacing: 2px; }
+.wg-dia-nome { font-weight: 600; font-size: 0.95rem; color: var(--texto); }
+.wg-dia-grupos { font-size: 0.75rem; color: var(--verde-claro); background: rgba(82,183,136,0.1); border: 1px solid rgba(82,183,136,0.2); padding: 3px 10px; border-radius: 10px; margin-left: auto; }
+
+.wg-exercicios-header { display: grid; grid-template-columns: 2fr 1fr 1.5fr 1fr; gap: 8px; padding: 8px 20px; font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; color: #444; border-bottom: 1px solid #111; }
+
+.wg-exercicio { display: grid; grid-template-columns: 2fr 1fr 1.5fr 1fr; gap: 8px; padding: 12px 20px; border-bottom: 1px solid #111; align-items: center; transition: background 0.15s; }
+.wg-exercicio:last-of-type { border-bottom: none; }
+.wg-exercicio:hover { background: rgba(255,255,255,0.02); }
+.wg-exercicio.destaque { background: rgba(234,179,8,0.05); border-left: 3px solid var(--amarelo); }
+
+.wg-ex-nome { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: var(--texto); }
+.wg-badge-principal { font-size: 0.62rem; background: rgba(234,179,8,0.15); border: 1px solid rgba(234,179,8,0.4); color: var(--amarelo); padding: 2px 6px; border-radius: 8px; white-space: nowrap; }
+.wg-ex-series { font-size: 0.9rem; color: var(--amarelo); font-weight: 600; }
+.wg-ex-metodo { font-size: 0.78rem; color: var(--verde-claro); }
+.wg-ex-descanso { font-size: 0.78rem; color: var(--texto-suave); }
+
+.wg-dia-obs { padding: 10px 20px; font-size: 0.8rem; color: var(--texto-suave); background: rgba(255,255,255,0.02); border-top: 1px solid #111; font-style: italic; }
+
+.wg-referencias { background: var(--cinza-escuro); border: 1px solid #222; border-radius: 10px; padding: 20px; }
+.wg-ref-titulo { font-size: 0.7rem; letter-spacing: 3px; text-transform: uppercase; color: var(--verde-claro); margin-bottom: 12px; }
+.wg-ref-item { font-size: 0.78rem; color: var(--texto-suave); margin-bottom: 6px; font-style: italic; line-height: 1.5; }
+
+@media (max-width: 768px) {
+  .wg-exercicios-header, .wg-exercicio { grid-template-columns: 1.5fr 0.8fr 1.2fr 0.8fr; }
+  .wg-cards { flex-direction: column; }
+}
