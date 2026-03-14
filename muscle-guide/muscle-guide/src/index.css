@@ -1,0 +1,64 @@
+:root {
+  --verde-escuro: #1a472a;
+  --verde-medio: #2d6a4f;
+  --verde-claro: #52b788;
+  --amarelo: #eab308;
+  --amarelo-claro: #fef9c3;
+  --preto: #0a0a0a;
+  --cinza-escuro: #141414;
+  --cinza-medio: #1e1e1e;
+  --cinza-claro: #2a2a2a;
+  --texto: #f0f0f0;
+  --texto-suave: #a0a0a0;
+  --fonte-titulo: 'Bebas Neue', sans-serif;
+  --fonte-corpo: 'DM Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--preto);
+  color: var(--texto);
+  font-family: var(--fonte-corpo);
+  font-weight: 400;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--cinza-escuro); }
+::-webkit-scrollbar-thumb { background: var(--verde-medio); border-radius: 3px; }
+
+/* Utility */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+button { cursor: pointer; font-family: var(--fonte-corpo); }
+input, textarea, select { font-family: var(--fonte-corpo); }
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.fade-in { animation: fadeIn 0.4s ease forwards; }
+.scale-in { animation: scaleIn 0.3s ease forwards; }
